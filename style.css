@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    font-family: Futura, sans-serif;
+}
+
+.titleHeader {
+    text-align: center;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.headerButtons {
+    text-align: center;
+    font-family: Futura, sans-serif;
+}
+
+.listItem {
+    text-align: left;
+    list-style: none;
+    width:fit-content;
+}
+
+.listItem:hover {
+    background: lightyellow;
+}
+
+.listInput {
+    text-align: left;
+    list-style: none;
+    width:fit-content;
+}
+
+
+#checkboxes {
+    width: fit-content;
+    margin: auto;
+}

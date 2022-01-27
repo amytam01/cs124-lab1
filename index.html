@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>To Do List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="topPart" class="header">
+            <h2 class="titleHeader">To Do List:</h2>
+            <button type="button" class="headerButtons">Delete Complete</button>
+            <button type="button" class="headerButtons">Show Incomplete</button>
+        </div>
+
+        <ul id="toDoList">
+            <div id = "checkboxes">
+            <li class="listItem"><input type="checkbox">Buy new John Grisham book</li>
+            <li class="listItem"><input type="checkbox">Eat lunch</li>
+            <li class="listItem"><input type="checkbox">Call mom</li>
+            <li class="listItem"><input type="checkbox">Text John</li>
+            <li class="listInput">
+                <form action = "handlenew.php">
+                    <input type="text" class="headerButtons" id="userInput" placeholder="New To Do">
+                    <input type = "submit" class="headerButtons" value = "Add">
+                </form>
+            </li>
+            </div>
+        </ul>
+    </body>
+    </html>
