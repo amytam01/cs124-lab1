@@ -6,25 +6,51 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="topPart" class="header">
-            <h2 class="titleHeader">To Do List:</h2>
-            <button type="button" class="headerButtons">Delete Complete</button>
-            <button type="button" class="headerButtons">Show Incomplete</button>
+        <div id="header">
+            <h2 class="titleHeader">To Do List</h2>
         </div>
-
-        <ul id="toDoList">
-            <div id = "checkboxes">
-            <li class="listItem"><input type="checkbox">Buy new John Grisham book</li>
-            <li class="listItem"><input type="checkbox">Eat lunch</li>
-            <li class="listItem"><input type="checkbox">Call mom</li>
-            <li class="listItem"><input type="checkbox">Text John</li>
-            <li class="listInput">
-                <form action = "handlenew.php">
-                    <input type="text" class="headerButtons" id="userInput" placeholder="New To Do">
-                    <input type = "submit" class="headerButtons" value = "Add">
-                </form>
-            </li>
+        <div id="tab">
+            <div id="stickyTab">
+                <button class="tablinks" type="button" >All</button>
+                <button class="tablinks" type="button">Incomplete</button>
+                <button class="tablinks" type="button">Complete</button>
             </div>
-        </ul>
+        </div>
+        <div id = "toDoList">
+            <div class="listItem">
+                <input type="checkbox" id="toDo1">
+                <label for="toDo1">Buy new John Grisham bookBuy new John Grisham Buy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new John GrishamBuy new John Grisham bookBuy new new John GrishamBuy new John Grisham bookBuy new John GrishambookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham bookBuy new John Grisham book</label>
+            </div>
+                <img class="editIcon" src = "edit.png" alt = "edit">
+                <img class="deleteIcon" src = "delete.png" alt = "delete">
+            <div class="listItem">
+                <input type="checkbox" id="toDo2">
+                <label  for="toDo2">Eat lunch</label>
+            </div>
+                <img class="editIcon" src = "edit.png" alt = "edit">
+                <img class="deleteIcon" src = "delete.png" alt = "delete">
+            <div class="listItem">
+                <input type="checkbox" id="toDo3">
+                <label  for="toDo3">Call mom</label>
+            </div>
+                <img class="editIcon" src = "edit.png" alt = "edit">
+                <img class="deleteIcon" src = "delete.png" alt = "delete">
+            <div class="listItem">
+                <input type="checkbox" id="toDo4">
+                <label for="toDo4">Text John</label>
+            </div>
+                <img class="editIcon" src = "edit.png" alt = "edit">
+                <img class="deleteIcon" src = "delete.png" alt = "delete">
+<!--            <form class="listInput" action = "handlenew.php">-->
+<!--                <input type="text" class="headerButtons" id="userInput" placeholder="New To Do">-->
+<!--                <input type = "submit" class="headerButtons" value = "Add">-->
+<!--            </form>-->
+        </div>
+        <div id="footer">
+            <form id="listInput" action = "handlenew.php">
+                <input type="text" class="headerButtons" id="userInput" placeholder="New To Do">
+                <input type = "submit" class="headerButtons" value = "Add">
+            </form>
+        </div>
     </body>
     </html>
