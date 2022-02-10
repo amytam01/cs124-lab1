@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>To Do List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <h2 id="titleHeader">To Do List</h2>
+            <div id="stickyTab">
+                <button id="incompleteTab" class="tabLinks" type="button">Incomplete</button>
+                <button id="completeTab" class="tabLinks" type="button">Complete</button>
+                <button id="allTab" class="tabLinks" type="button" >All</button>
+            </div>
+        </div>
+        <div id="whiteSpace">
+<!--            This is a placeholder div!-->
+        </div>
+        <div id = "toDoList">
+            <div class="listItem">
+                <input class="toDoCheckbox" type="checkbox" id="toDo1">
+                <label for="toDo1">Buy new John Grisham book</label>
+            </div>
+            <img class="editIcon" src = "edit.png" alt = "edit">
+            <img class="deleteIcon" src = "delete.png" alt = "delete">
+            <div class="listItem">
+                <input class="toDoCheckbox" type="checkbox" id="toDo2">
+                <label  for="toDo2">Eat lunch</label>
+            </div>
+            <img class="editIcon" src = "edit.png" alt = "edit">
+            <img class="deleteIcon" src = "delete.png" alt = "delete">
+            <div class="listItem">
+                <input class="toDoCheckbox" type="checkbox" id="toDo3">
+                <label  for="toDo3">Call mom</label>
+            </div>
+            <img class="editIcon" src = "edit.png" alt = "edit">
+            <img class="deleteIcon" src = "delete.png" alt = "delete">
+            <div class="listItem">
+                <input class="toDoCheckbox" type="checkbox" id="toDo4">
+                <label for="toDo4">Text John</label>
+            </div>
+            <img class="editIcon" src = "edit.png" alt = "edit">
+            <img class="deleteIcon" src = "delete.png" alt = "delete">
+            <div class="listItem">
+                <input class="toDoCheckbox" type="checkbox" id="toDo5">
+                <label for="toDo4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+            </div>
+            <img class="editIcon" src = "edit.png" alt = "edit">
+            <img class="deleteIcon" src = "delete.png" alt = "delete">
+<!--            <form class="listInput" action = "handlenew.php">-->
+<!--                <input type="text" class="headerButtons" id="userInput" placeholder="New To Do">-->
+<!--                <input type = "submit" class="headerButtons" value = "Add">-->
+<!--            </form>-->
+            <button id="deleteAllButton" type="button">Delete All Complete Tasks</button>
+        </div>
+        <div id="footer">
+            <form id="listInput" action = "handlenew.php">
+                <input type="text" id="addTaskEntry" class="headerButtons" id="userInput" placeholder="New To Do">
+                <input type = "submit" id="addTaskButton" class="headerButtons" value = "Add">
+            </form>
+        </div>
+    </body>
+    </html>
