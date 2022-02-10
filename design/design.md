@@ -7,7 +7,7 @@ We wanted to limit the number of hidden features on the screen to increase ease 
 <br>
 
 <br><br>
-![Design1](/design1.jpg)
+![Design1](/design/design1.jpg)
 <br><br>
 
 ---
@@ -16,16 +16,16 @@ We wanted to limit the number of hidden features on the screen to increase ease 
 We had many ideas for our design. We started out with a simple to-do list app, with all the basic functionalities mentioned in the assignment. We had an add button in the top right and buttons with text like delete complete and show incomplete. We later shifted the button to the bottom right corner for easier tap access on a mobile phone for users. We also considered having only one edit button for users to edit multiple tasks. However, we thought that might be confusing in terms of usage so we removed it.
 
 <br><br>
-![Design1](/design1.jpg)
+![Design1](/design/design1.jpg)
 <br><br>
 <br><br>
-![Design1](/design2.jpg)
+![Design2](/design/design2.jpg)
 <br><br>
 <br><br>
-![Design1](/design3.jpg)
+![Design3](/design/design3.jpg)
 <br><br>
 <br><br>
-![Design1](/design4.jpg)
+![Design4](/design/design4.jpg)
 <br><br>
 
 <br><br>
