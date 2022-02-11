@@ -1,64 +1,45 @@
 <!DOCTYPE html>
-    <html lang = "en">
-    <head>
-        <meta charset="UTF-8">
-        <title>To Do List</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="header">
-            <h2 id="titleHeader">To Do List</h2>
-            <div id="stickyTab">
-                <button id="incompleteTab" class="tabLinks" type="button">Incomplete</button>
-                <button id="completeTab" class="tabLinks" type="button">Complete</button>
-                <button id="allTab" class="tabLinks" type="button" >All</button>
-            </div>
-        </div>
-        <div id="whiteSpace">
-<!--            This is a placeholder div!-->
-        </div>
-        <div id = "toDoList">
-            <div class="listItem">
-                <input class="toDoCheckbox" type="checkbox" id="toDo1">
-                <label for="toDo1">Buy new John Grisham book</label>
-            </div>
-            <img class="editIcon" src = "edit.png" alt = "edit">
-            <img class="deleteIcon" src = "delete.png" alt = "delete">
-            <div class="listItem">
-                <input class="toDoCheckbox" type="checkbox" id="toDo2">
-                <label  for="toDo2">Eat lunch</label>
-            </div>
-            <img class="editIcon" src = "edit.png" alt = "edit">
-            <img class="deleteIcon" src = "delete.png" alt = "delete">
-            <div class="listItem">
-                <input class="toDoCheckbox" type="checkbox" id="toDo3">
-                <label  for="toDo3">Call mom</label>
-            </div>
-            <img class="editIcon" src = "edit.png" alt = "edit">
-            <img class="deleteIcon" src = "delete.png" alt = "delete">
-            <div class="listItem">
-                <input class="toDoCheckbox" type="checkbox" id="toDo4">
-                <label for="toDo4">Text John</label>
-            </div>
-            <img class="editIcon" src = "edit.png" alt = "edit">
-            <img class="deleteIcon" src = "delete.png" alt = "delete">
-            <div class="listItem">
-                <input class="toDoCheckbox" type="checkbox" id="toDo5">
-                <label for="toDo4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-            </div>
-            <img class="editIcon" src = "edit.png" alt = "edit">
-            <img class="deleteIcon" src = "delete.png" alt = "delete">
-<!--            <form class="listInput" action = "handlenew.php">-->
-<!--                <input type="text" class="headerButtons" id="userInput" placeholder="New To Do">-->
-<!--                <input type = "submit" class="headerButtons" value = "Add">-->
-<!--            </form>-->
-            <button id="deleteAllButton" type="button">Delete All Complete Tasks</button>
-        </div>
-        <div id="footer">
-            <form id="listInput" action = "handlenew.php">
-                <input type="text" id="addTaskEntry" class="headerButtons" id="userInput" placeholder="New To Do">
-                <input type = "submit" id="addTaskButton" class="headerButtons" value = "Add">
-            </form>
-        </div>
-    </body>
-    </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Walkthrough</title>
+    <link rel="stylesheet" href="index_style.css">
+</head>
+<body>
+    <div>
+        <iframe src="part1.html"></iframe>
+        <p>This is the default page for our To-Do list application. The tabs on top of the screen allow the user to filter tasks by completion. The default tab is incomplete due to feedback during user testing. Clicking on a tab changes the content of the list below:</p>
+    </div>
+    <h2>After clicking on the "Complete" tab:</h2>
+    <div>
+        <iframe src="part2.html"></iframe>
+        <p>After clicking the "complete" tab, the user can see tasks that were already completed, and the incomplete tasks disappear. If the user clicks the "all" tab:</p>
+    </div>
+    <h2>After clicking on the "All" tab:</h2>
+    <div>
+        <iframe src="part3.html"></iframe>
+        <p>Now we can see all the tasks, including completed ones.</p>
+    </div>
+    <h2>Marking tasks as completed:</h2>
+    <div>
+        <iframe src="part4.html"></iframe>
+        <p>By clicking on either the checkbox on the left or the text itself, the user can mark a task as complete. Here, the user marks the task "Call Mom" completed.</p>
+    </div>
+    <h2>Editing and deleting tasks:</h2>
+    <div>
+        <iframe src="part5.html"></iframe>
+        <p>The large "Delete All Complete Tasks" button does exactly what it says. Here, the user clicks it to clear three tasks from the list.</p>
+    </div>
+    <h2>Deleting all tasks:</h2>
+    <div>
+        <iframe src="part6.html"></iframe>
+        <p>By clicking on the pencil icon, the user can edit the name of a task directly. Similarly, the user can click on the trash can to delete the respective task. Here, the user renames the task "Text John" to "Text John about bank statements" and deleted the task "Eat Lunch."</p>
+    </div>
+    <h2>Adding new tasks to empty/non-empty lists:</h2>
+    <div>
+        <iframe src="part6.html"></iframe>
+        <iframe src="part7.html"></iframe>
+        <p>The form at the bottom of the screen allows the user to add tasks to the to-do list. Here, the user adds a task to an empty list, then adds another task.</p>
+    </div>
+</body>
+</html>

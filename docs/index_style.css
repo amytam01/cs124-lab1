@@ -1,0 +1,16 @@
+body {
+    font-family: Futura, sans-serif;
+}
+
+div {
+    display: flex;
+    gap: 50px;
+}
+
+iframe {
+    height: 640px;
+    width: 320px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
