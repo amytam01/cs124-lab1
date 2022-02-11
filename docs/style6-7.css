@@ -1,0 +1,163 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.app {
+    font-family: Futura, sans-serif;
+    display: grid;
+    grid-template-rows: 6fr 20fr 3fr;
+    height: 100vh;
+}
+
+#header {
+    grid-row: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /*justify-content: space-between;*/
+    /*background: linear-gradient(90deg,  0%, #4364f7 50%, #6fb1fc 100%);*/
+    color: ivory;
+    background-color: #5433ff;
+    padding-left: 5vw;
+    z-index: 100;
+}
+
+#titleHeader {
+    font-size: 8vw;
+}
+
+.tabLinks {
+    float: left;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.4vw;
+    border-radius: 3vw 3vw 0px 0px;
+    font-family: Futura, sans-serif;
+    font-size: 4vw;
+    padding: 1vh 4vw;
+    background-color: #d9e8ff;
+}
+
+#allTab {
+    background-color: white;
+    border-bottom: solid;
+    border-bottom-color: white;
+    border-bottom-width: 0.8vw;
+}
+
+/*#whiteSpace {*/
+/*    grid-row: 2;*/
+/*    position: fixed;*/
+/*    background: white;*/
+/*    !*height: 100%;*!*/
+/*    width: 100%;*/
+/*    z-index: 99;*/
+/*}*/
+
+#toDoList {
+    grid-row: 2;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0vh 1vw;
+    overflow-y: scroll;
+    align-items: stretch;
+}
+
+#toDoList div:nth-child(even) {
+    background-color: #d9e8ff;
+}
+
+input:checked + label {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+/*.toDoCheckbox {*/
+/*    margin-bottom: 1.5vh;*/
+/*}*/
+
+/*input[type=checkbox] {*/
+/*    !*transform: scale(1.1);*!*/
+/*}*/
+
+.listItem {
+    display: flex;
+    justify-content: start;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 0.25vh;
+    padding-bottom: 0.25vh;
+}
+
+.editIcon {
+    margin-left: auto;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+.deleteIcon {
+}
+
+img {
+    width: 5vw;
+    height: 5vw;
+}
+
+#deleteAllButton {
+    font-size: 4vw;
+    font-family: Futura;
+    background-color: #d9e8ff;
+    border-style: solid;
+    border-color: #b7d3ff;
+    border-width: 0.4vw;
+    border-radius: 2.5vw;
+    padding: 2vw;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#footer {
+    grid-row: 3;
+    width: 90vw;
+    position: fixed;
+    bottom: 0;
+    /*vert-align: middle;*/
+    /*align-content: center;*/
+    /*background: linear-gradient(90deg, #5433ff 0%, #4364f7 50%, #6fb1fc 100%);*/
+    background-color: #5433ff;
+    z-index: 101;
+    padding: 5vw;
+}
+
+#listInput {
+    font-size: 4vw;
+    display: grid;
+    row-gap: 2vw;
+    grid-template-columns: 5fr 1fr;
+    font-size: 2.5vw;
+}
+
+.footerButtons {
+    font-family: Futura, sans-serif;
+    height: 8vw;
+    font-size: 4vw;
+    padding-left: 2.5vw;
+}
+
+#addTaskEntry {
+    border-radius: 2.5vw 0px 0px 2.5vw;
+    height: 4vh;
+}
+
+#addTaskButton {
+    background-color: #d9e8ff;
+    height: 4vh;
+    /*border-style: solid;*/
+    border-color: #b7d3ff;
+    /*border-width: 3px;*/
+    border-radius: 0px 2.5vw 2.5vw 0px;
+}
