@@ -249,14 +249,19 @@ button.deleteCompleted{
 input.addTask {
     font-family: Futura, sans-serif;
     width: 70%;
+    border-width: 0px;
+    border-radius: 20px 0px 0px 20px;
+    border-color: #C1F4C5;
+    padding: 5px;
 }
 
 button.addTaskButton {
     font-family: Futura, sans-serif;
     background-color: #C1F4C5;
     /*border-style: solid;*/
-    /*border-width: 3px;*/
+    border-width: 0px;
     border-radius: 0px 20px 20px 0px;
     border-color: #C1F4C5;
     width: 20%;
+    padding: 5px;
 }
