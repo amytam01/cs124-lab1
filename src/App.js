@@ -91,29 +91,60 @@ function Tasks(props) {
 function TaskList(props) {
     return (
         <div>
-            {props.taskList.filter(task => !props.completedTaskList.includes(task.id)).map(task => <Task key={task.id}
-                                  text={task.text}
-                                  id={task.id}
-                                  isChecked={props.completedTaskList.includes(task.id)}
-                                  editingTaskId={props.editingTaskId}
-                                  onEditTask={props.onEditTask}
-                                  onCompletedTask={props.onCompletedTask}
-                                  onToggleEditTaskId={props.onToggleEditTaskId}
-                                  onDeleteTask={props.onDeleteTask}/>)
-            }
-            {props.taskList.filter(task => props.completedTaskList.includes(task.id)).map(task => <Task key={task.id}
-                                 text={task.text}
-                                 id={task.id}
-                                 isChecked={props.completedTaskList.includes(task.id)}
-                                 editingTaskId={props.editingTaskId}
-                                 onEditTask={props.onEditTask}
-                                 onCompletedTask={props.onCompletedTask}
-                                 onToggleEditTaskId={props.onToggleEditTaskId}
-                                 onDeleteTask={props.onDeleteTask}/>)
-            }
-            <button className={"deleteCompleted"} type={"button"} onClick={props.onDeleteAllCompletedTasks}>Delete All Completed Tasks</button>
+            {props.taskList.length === 0 ?
+                <div>Start by Adding a new Task?</div> :
+                <div>
+                    {props.taskList.filter(task => !props.completedTaskList.includes(task.id)).map(task => <Task key={task.id}
+                                                     text={task.text}
+                                                     id={task.id}
+                                                     isChecked={props.completedTaskList.includes(task.id)}
+                                                     editingTaskId={props.editingTaskId}
+                                                     onEditTask={props.onEditTask}
+                                                     onCompletedTask={props.onCompletedTask}
+                                                     onToggleEditTaskId={props.onToggleEditTaskId}
+                                                     onDeleteTask={props.onDeleteTask}/>)
+                    }
+                    {props.taskList.filter(task => props.completedTaskList.includes(task.id)).map(task => <Task key={task.id}
+                                                    text={task.text}
+                                                    id={task.id}
+                                                    isChecked={props.completedTaskList.includes(task.id)}
+                                                    editingTaskId={props.editingTaskId}
+                                                    onEditTask={props.onEditTask}
+                                                    onCompletedTask={props.onCompletedTask}
+                                                    onToggleEditTaskId={props.onToggleEditTaskId}
+                                                    onDeleteTask={props.onDeleteTask}/>)
+                    }
+                    <button className={"deleteCompleted"} type={"button"} onClick={props.onDeleteAllCompletedTasks}>Delete All Completed Tasks</button>
+                </div>}
         </div>
     )
+
+        // {props.taskList === [] ?
+        //     <div>
+        //         {props.taskList.filter(task => !props.completedTaskList.includes(task.id)).map(task => <Task key={task.id}
+        //                               text={task.text}
+        //                               id={task.id}
+        //                               isChecked={props.completedTaskList.includes(task.id)}
+        //                               editingTaskId={props.editingTaskId}
+        //                               onEditTask={props.onEditTask}
+        //                               onCompletedTask={props.onCompletedTask}
+        //                               onToggleEditTaskId={props.onToggleEditTaskId}
+        //                               onDeleteTask={props.onDeleteTask}/>)
+        //         }
+        //         {props.taskList.filter(task => props.completedTaskList.includes(task.id)).map(task => <Task key={task.id}
+        //                              text={task.text}
+        //                              id={task.id}
+        //                              isChecked={props.completedTaskList.includes(task.id)}
+        //                              editingTaskId={props.editingTaskId}
+        //                              onEditTask={props.onEditTask}
+        //                              onCompletedTask={props.onCompletedTask}
+        //                              onToggleEditTaskId={props.onToggleEditTaskId}
+        //                              onDeleteTask={props.onDeleteTask}/>)
+        //         }
+        //         <button className={"deleteCompleted"} type={"button"} onClick={props.onDeleteAllCompletedTasks}>Delete All Completed Tasks</button
+        //     </div> :
+        //
+        // }
 }
 
 function Task(props) {
@@ -140,6 +171,9 @@ function Footer(props) {
     return (
         <div className="addTaskSection">
             <input className={"addTask"}
+                   onClick={
+                       (e) => setTaskToAdd("")
+                   }
                    onChange={
                        (e) => setTaskToAdd(e.target.value)
                    }
@@ -168,7 +202,11 @@ function App() {
     }
 
     function handleEditTaskToggle(taskId) {
-        setEditingTaskId(taskId);
+        if (editingTaskId === taskId) {
+            setEditingTaskId("");
+        } else {
+            setEditingTaskId(taskId);
+        }
     }
 
     function handleDeleteTask(taskId) {

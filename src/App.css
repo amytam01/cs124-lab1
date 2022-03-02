@@ -2,15 +2,23 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.editIcon {
+  height: 20px;
+}
+
+.deleteIcon {
+  height: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.deleteCompleted {
+  width: 50vw;
+  height: 5vw;
 }
 
 .App-header {
@@ -36,3 +44,13 @@
     transform: rotate(360deg);
   }
 }
+
+/*#Footer {*/
+/*  align-items: center;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-around;*/
+/*  font-size: 3rem;*/
+/*  !*min-height: 25vh;*!*/
+/*  width: 100%;*/
+/*}*/
