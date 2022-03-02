@@ -23,13 +23,6 @@
 /*    margin-bottom: 50px;*/
 /*}*/
 
-/*#titleHeader {*/
-/*    font-size: 8vw;*/
-/*    margin: 0px;*/
-/*    padding-bottom: 50px;*/
-/*    padding-top: 50px;*/
-/*}*/
-
 /*#whiteSpace {*/
 /*    grid-row: 2;*/
 /*    position: fixed;*/
@@ -141,17 +134,99 @@
 /*    margin-bottom: 10px;*/
 /*}*/
 
+body {
+    font-family: Futura, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    position: sticky;
+    background-color: #65C18C;
+}
+
+.headerText {
+    font-size: 8vw;
+    margin: 2vw;
+    color: white;
+}
+
+.tasks {
+    flex-grow: 1;
+}
+
+.react-tabs {
+    height: 100%;
+    background-color: #C1F4C5;
+    overflow: scroll;
+}
+
+.react-tabs__tab-list {
+    background-color: #65C18C;
+    position: sticky;
+}
+
+.react-tabs__tab.react-tabs__tab--selected {
+    background-color: #C1F4C5;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5vh 2vw;
+}
+
+.listItem {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 0.2vw;
+    padding: 1vh;
+    margin: 0.5vh 0vw;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.checkbox {
+}
+
+.person {
+    flex-grow: 10;
+}
+
+.editIcon {
+}
+
+.deleteIcon {
+}
+
+button.deleteCompleted{
+    font-family: Futura, sans-serif;
+    width: 80%;
+    height: 5vh;
+    border-radius: 20px 20px 20px 20px;
+    margin: 3vh auto;
+}
+
 .footer {
     /*font-size: 10vw;*/
-    position: fixed;
+    position: sticky;
     bottom: 0;
-    vert-align: middle;
-    align-content: center;
+    margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
     /*background: linear-gradient(90deg, #5433ff 0%, #4364f7 50%, #6fb1fc 100%);*/
     width: 100%;
-    background-color: #019267;
+    background-color: #65C18C;
     z-index: 101;
 }
 
@@ -176,23 +251,12 @@ input.addTask {
     width: 70%;
 }
 
-button.deleteCompleted{
-    font-family: Futura, sans-serif;
-    background-color: #00C897;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 80%;
-    /*padding: 10px 10px 10px 10px;*/
-    border-radius: 20px 20px 20px 20px;
-}
-
 button.addTaskButton {
     font-family: Futura, sans-serif;
-    background-color: #00C897;
+    background-color: #C1F4C5;
     /*border-style: solid;*/
     /*border-width: 3px;*/
     border-radius: 0px 20px 20px 0px;
-    border-color: #00C897;
+    border-color: #C1F4C5;
     width: 20%;
 }

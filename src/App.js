@@ -90,7 +90,7 @@ function Tasks(props) {
 
 function TaskList(props) {
     return (
-        <div>
+        <div className={"taskList"}>
             {props.taskList.length === 0 ?
                 <div>Start by Adding a new Task?</div> :
                 <div>
@@ -152,12 +152,12 @@ function Task(props) {
         <div className="listItem">
             <input type="checkbox" checked={props.isChecked} onChange={(e) => props.onCompletedTask(props.id)}></input>
             {props.editingTaskId === props.id ?
-                <input className={"person"}
+                <input className="person"
                       onChange={
                           (e) => props.onEditTask(props.id, e.target.value)
                       }
                       value={props.text}></input> :
-                <span className={"person"}>{props.text}</span>
+                <span className="person">{props.text}</span>
             }
             <img className="editIcon" src={editIcon} alt="edit" onClick={(e ) => props.onToggleEditTaskId(props.id)}></img>
             <img className="deleteIcon" src={deleteIcon} alt="delete" onClick={(e) => props.onDeleteTask(props.id)}></img>
@@ -227,14 +227,18 @@ function App() {
     }
 
     return (
-        <div>
-            <Header></Header>
-            <Tasks taskList={taskList} completedTaskList={completedTaskList} editingTaskId={editingTaskId}
-                   onEditTask={handleEditTask}
-                   onCompletedTask={handleSetCompletedTask}
-                   onToggleEditTaskId={handleEditTaskToggle}
-                   onDeleteTask={handleDeleteTask}
-                   onDeleteAllCompletedTasks={handleDeleteAllCompletedTasks}></Tasks>
+        <div className={"app"}>
+            <div className={"header"}>
+                <Header></Header>
+            </div>
+            <div className={"tasks"}>
+                <Tasks taskList={taskList} completedTaskList={completedTaskList} editingTaskId={editingTaskId}
+                       onEditTask={handleEditTask}
+                       onCompletedTask={handleSetCompletedTask}
+                       onToggleEditTaskId={handleEditTaskToggle}
+                       onDeleteTask={handleDeleteTask}
+                       onDeleteAllCompletedTasks={handleDeleteAllCompletedTasks}></Tasks>
+            </div>
             <div className="footer">
                 <Footer onAddTask={handleAddTask}></Footer>
             </div>
