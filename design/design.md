@@ -16,9 +16,9 @@ For the second lab, we kept the fundamental ideas the same from our first lab. M
 <br>
 
 <br><br>
-![Design1](/design1.jpg)
+![Design1](/design/design1.jpg)
 <br><br>
-![Design2-1](/design2-1.jpeg)
+![Design2-1](/design/design2-1.jpeg)
 <br><br>
 
 ---
@@ -40,13 +40,13 @@ We wanted to follow our original vision and thus did not change much. However, b
 ![Design1](/design/design1.jpg)
 <br><br>
 <br><br>
-![Design1](/design2.jpg)
+![Design1](/design/design2.jpg)
 <br><br>
 <br><br>
-![Design1](/design3.jpg)
+![Design1](/design/design3.jpg)
 <br><br>
 <br><br>
-![Design1](/design4.jpg)
+![Design1](/design/design4.jpg)
 <br><br>
 
 <br><br>
