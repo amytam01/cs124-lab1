@@ -1,0 +1,10 @@
+.header {
+    position: sticky;
+    background-color: #65C18C;
+}
+
+.headerText {
+    font-size: 8vw;
+    margin: 2vw;
+    color: white;
+}

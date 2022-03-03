@@ -1,0 +1,18 @@
+.taskList {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5vh 2vw;
+}
+
+button.deleteCompleted{
+    font-family: Futura, sans-serif;
+    background-color: #FFD365;
+    width: 80%;
+    font-size: 12pt;
+    color: #6b2f02;
+    height: 5vh;
+    border-style: none;
+    border-radius: 20px 20px 20px 20px;
+    margin: 3vh auto;
+    display:block;
+}

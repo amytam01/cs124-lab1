@@ -1,0 +1,34 @@
+.footer {
+    position: sticky;
+    bottom: 0;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #65C18C;
+    z-index: 101;
+}
+
+.addTaskSection {
+    display: flex;
+    justify-content: center;
+}
+
+input.addTask {
+    font-family: Futura, sans-serif;
+    width: 70%;
+    border-width: 0px;
+    border-radius: 20px 0px 0px 20px;
+    border-color: #C1F4C5;
+    padding: 5px;
+}
+
+button.addTaskButton {
+    font-family: Futura, sans-serif;
+    background-color: #C1F4C5;
+    border-width: 0px;
+    border-radius: 0px 20px 20px 0px;
+    border-color: #C1F4C5;
+    width: 20%;
+    padding: 5px;
+}

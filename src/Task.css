@@ -1,0 +1,56 @@
+.listItem {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 0.2vw;
+    padding: 1vh;
+    margin: 0.5vh 0vw;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    word-wrap:anywhere;
+
+}
+
+.task {
+    font-family: Futura, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    /*border-style: solid;*/
+    /*border-color: black;*/
+    font-size: 12pt;
+    /*border-bottom: #65C18C;*/
+}
+
+.task.editing {
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: black;
+    font-size: 12pt;
+}
+
+.taskName {
+    flex-grow: 10;
+}
+
+#completedTask{
+    text-decoration: line-through;
+    opacity: 1;
+    color: dimgray;
+}
+
+.editIcon {
+    height: 20px;
+}
+
+.deleteIcon {
+    height: 20px;
+}

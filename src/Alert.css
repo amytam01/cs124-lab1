@@ -1,0 +1,55 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 400pt;
+    right: 300pt;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 102;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 5pt;
+    border-color: black;
+    border-style: solid;
+    margin: 0 auto;
+    top: 30vh;
+    height: 100pt;
+    width: 200pt;
+    padding: 10pt;
+    position: relative;
+    z-index: 103;
+}
+
+.alert-buttons {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    z-index: 104;
+}
+
+button.alert-button.alert-cancel {
+    font-family: Futura, sans-serif;
+    background-color: #dedede;
+    border-width: 0px;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #C1F4C5;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+button.alert-button.alert-ok {
+    font-family: Futura, sans-serif;
+    background-color: #C1F4C5;
+    border-width: 0px;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #C1F4C5;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}

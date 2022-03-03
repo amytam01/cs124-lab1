@@ -1,56 +1,23 @@
-.App {
-  text-align: center;
+body {
+    font-family: Futura, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
-.editIcon {
-  height: 20px;
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
-.deleteIcon {
-  height: 20px;
-}
+/*.header {*/
+/*    position: sticky;*/
+/*    background-color: #65C18C;*/
+/*}*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.deleteCompleted {
-  width: 50vw;
-  height: 5vw;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/*#Footer {*/
-/*  align-items: center;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: space-around;*/
-/*  font-size: 3rem;*/
-/*  !*min-height: 25vh;*!*/
-/*  width: 100%;*/
+/*.headerText {*/
+/*    font-size: 8vw;*/
+/*    margin: 2vw;*/
+/*    color: white;*/
 /*}*/
