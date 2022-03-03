@@ -37,7 +37,7 @@ We wanted to follow our original vision and thus did not change much. However, b
 
 >>>>>>> 244b3a4 (Create design.md)
 <br><br>
-![Design1](/design1.jpg)
+![Design1](/design/design1.jpg)
 <br><br>
 <br><br>
 ![Design1](/design2.jpg)
