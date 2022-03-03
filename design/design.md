@@ -92,4 +92,5 @@ First Lab:
 The part of the design we’re the proudest of is getting this to-do application to look like a folder. A lot of varying elements went into this, from rounding the edges of the buttons, to editing borders of specific sides to make the look of folder tabs consistent.
 
 Second Lab:
+
 The proudest part of our design is probably our pop up module. We pride ourselves in being able to get the pop-up module to work, but also that the rest of the page is dimmed and that a user can click outside of the module or use the cancel button in order to escape. Overall, we're really proud of our design consistency and the progress since the last lab.
