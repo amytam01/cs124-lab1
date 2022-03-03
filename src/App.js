@@ -32,15 +32,6 @@ const initialData = [
     }
 ];
 
-/* UI broken into three rendered sections:
-- Header with name
-- List including tabs that display filtered lists
-    - List of tasks
-        - invidual tasks + edit + delete icons
-    - Delete all tasks button
-- Footer with add task button
- */
-
 function Header() {
     return <h2 className={"headerText"}>To Do List:</h2>
 }
@@ -129,7 +120,7 @@ function TaskList(props) {
 
 function Alert(props) {
     return (
-        <div className={"backdrop"}>
+        <div className={"backdrop"} onClick={(e) => props.onClose("")}>
             <div className="modal">
                 {props.children}
                 <div className="alert-buttons">
