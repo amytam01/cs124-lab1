@@ -194,6 +194,8 @@ body {
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
+    word-wrap:anywhere;
+
 }
 
 .checkbox {
@@ -211,8 +213,13 @@ body {
 
 button.deleteCompleted{
     font-family: Futura, sans-serif;
+    background-color: #FFD365;
     width: 80%;
+    font-size: 12pt;
     height: 5vh;
+    /*border-width: 0px;*/
+    /*border-color: #FFD365;*/
+    border-style: none;
     border-radius: 20px 20px 20px 20px;
     margin: 3vh auto;
 }
@@ -264,4 +271,92 @@ button.addTaskButton {
     border-color: #C1F4C5;
     width: 20%;
     padding: 5px;
+}
+
+.person {
+    font-family: Futura, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    /*border-style: solid;*/
+    /*border-color: black;*/
+    font-size: 12pt;
+    /*border-bottom: #65C18C;*/
+}
+
+.person.editing {
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: black;
+    font-size: 12pt;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 400pt;
+    right: 300pt;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 102;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 5pt;
+    border-color: black;
+    border-style: solid;
+    margin: 0 auto;
+    top: 30vh;
+    height: 100pt;
+    width: 200pt;
+    padding: 10pt;
+    position: relative;
+    z-index: 103;
+}
+
+.alert-buttons {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    z-index: 104;
+}
+
+#completedTask{
+    text-decoration: line-through;
+    opacity: 1;
+    color: dimgray;
+}
+
+button.alert-button.alert-cancel {
+    font-family: Futura, sans-serif;
+    background-color: #dedede;
+    /*border-style: solid;*/
+    border-width: 0px;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #C1F4C5;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+button.alert-button.alert-ok {
+    font-family: Futura, sans-serif;
+    background-color: #C1F4C5;
+    /*border-style: solid;*/
+    border-width: 0px;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #C1F4C5;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
