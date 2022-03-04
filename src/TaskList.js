@@ -6,7 +6,7 @@ function TaskList(props) {
     return (
         <div className={"taskList"}>
             {props.taskList.length === 0 ?
-                <div>Start by Adding a New Task?</div> :
+                <div>Oops! Looks like you have no tasks.</div> :
                 <div>
                     {props.taskList.filter(task =>
                         !props.completedTaskList.includes(task.id)).map(task => <Task key={task.id}
